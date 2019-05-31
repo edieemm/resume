@@ -2,7 +2,8 @@
 body{
   font-family: 'Roboto', sans-serif;
   text-align: left;
-  background: url('wood.jpg');
+  background: rgb(2,0,36);
+  background: linear-gradient(180deg, rgba(29,49,88,1) 0%, rgba(30,78,72,1) 95%, rgba(30,91,65,1) 100%);
   letter-spacing: 0.01em;
 }
 
@@ -53,6 +54,7 @@ p{
 li{
   position: relative;
   left: -19px;
+  font-size: 16;
 }
 .right-column h4{
   position: relative;
@@ -68,7 +70,7 @@ a {
 }
 a:hover {
   color: black;
-  font-size: 17px;
+  font-size: 16.5px;
 }
 
 
@@ -77,8 +79,9 @@ a:hover {
   padding: 100px 0 70px 0;
   display: flex;
   width: fit-content;
-  background-color: white;
+  background-color: #eaeaea;
   box-shadow: 5px 5px 50px black;
+  border-radius: 5px;
 }
 .left-column,
 .right-column {
@@ -94,4 +97,28 @@ a:hover {
   margin-right: 70px;
   margin-top: 88px;
   line-height: 1.4em;
+}
+
+.sidebar {
+  margin-top: 100px;
+  padding: 10px;
+  width: fit-content;
+  background-color: #eaeaea;
+  box-shadow: 1px 1px 50px black;
+  border-radius: 10px;
+  position: fixed;
+  right: 5px;
+  z-index: 10;
+  font-size: 14px;
+}
+
+
+.sidebar {
+  cursor: pointer;
+}
+.x, .notif {
+  background-color: #eaeaea;
+  display: inline-block;
+  margin: 0;
+  padding-left: 10px;
 }
